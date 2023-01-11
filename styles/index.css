@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 400ms;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    user-select: none;
+    background-color: #121212;
+
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background-color: #212121;
+    border-radius: 20px;
+    max-width: 450px;
+    font-family: "Calibri";
+    padding: 15px;
+   box-shadow: 0 0 50px lightgray, 0 0 150px rgba(211, 211, 211, 0.605), 0 0 300px rgba(211, 211, 211, 0.508);
+}
+.item {
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.item:hover {
+    text-shadow: 0 0 30px white;
+}
+.input {
+    min-height: 60px;
+    height: auto;
+    padding: 5px 20px;
+    grid-column: 1/-1;
+    font-size: 40px;
+    justify-content: flex-end;
+}
+.upper {
+    font-size: 20px;
+    margin-left: 3px;
+    margin-top: -20px;
+}
+
+.clean, .back, .percent, .divide, .mul, .sub, .add {
+    color: #ff7c01;
+}
+
+.clean:hover , .back:hover , .percent:hover , .divide:hover , .mul:hover , .sub:hover , .add :hover {
+text-shadow: 0 0 30px rgb(255, 166, 0);
+}
+
+.equal { 
+    background-color: #ff7c01;
+
+}
